@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* @charset "UTF-8";
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: Cyrus McCormick
+   Date: 08/31/2023
+   Filename: ph_styles.css
+*/
+
+/* Web Fonts */
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+         url('cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Grunge;
+  src: url('1942.woff') format('woff'),
+       url('1942.ttf') format('truetype');
+} 
+
+@font-face {
+  font-family: Dobkin;
+  src: url('DobkinPlain.woff') format('woff'),
+       url('DobkinPlain.ttf') format('truetype');
+}
+
+/* Structural Styles */
+html {
+  background-color: hsl(91, 8%, 56%);
+}
+
+body {
+  background-color: hsl(58, 31%, 84%);
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+header {
+  background-color: black;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 0;
+    padding: 5px 25px;
+}
+/* Style for h1 headings within playbill sections */
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0;
+    padding: 20px 0 10px 20px;
+}
+
+/* Background color for each playbill */
+#play1 {
+    background-color: hsl(240, 100%, 88%);
+}
+
+#play2 {
+    background-color: hsl(25, 88%, 73%);
+}
+
+#play3 {
+    background-color: hsl(0, 100%, 75%);
+}
+
+#play4 {
+    background-color: hsl(296, 86%, 86%);
+}
+
+/* Font stacks for h1 headings within playbills */
+#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+#play2 h1 {
+    font-family: Grunge, 'Times New Roman', Times, serif;
+}
+
+#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
+/* Style for paragraphs that are direct children of the body element */
+body > p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Address Styles */
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navigation Styles */
+nav a {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
+/* Style for unvisited and previously visited hypertext links within nav */
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+
+nav a:hover,
+nav a:active {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.7);
+}
+
+/* Section Styles */
+
+
+
+/* Style for dd elements */
+dd {
+    font-size: 1.3em;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+/* Style for dt elements within definition lists */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+/* Style for dd elements within definition lists */
+dd {
+    font-size: 1.3em;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+}
